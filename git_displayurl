@@ -1,0 +1,11 @@
+#!/bin/bash
+
+FILE="$HOME/.git_url"
+
+mkfifo $FILE
+
+while [ 1 ]; do
+
+	cat $FILE 
+
+done
